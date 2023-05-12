@@ -31,5 +31,9 @@ You can add teleport by setting the matrix:
 ```
 ## Screenshots
 
-![App Screenshot](image/screen)
+- The green blocks are those who were visited by the alghoritm
+- The red one is the start and finish
+- The black ones is the shortest path finded
+
+![App Screenshot](screen.png)
 
