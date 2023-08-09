@@ -9,26 +9,20 @@ A Java Swing Project that take two points inside a maze (boolean matrix) and out
 
 ## Usage
 
-In order to setup the entry and leaving point you have to change the end and start variable
+In order to setup the entry and leaving point you have to provide it by terminal in the following order:
 
-```java
-    static int[] end = new int[]{3, 3};
-    static int[] start = new int[]{9, 16};
+```bash
+    java fileName firstPointX firstPointY secondPointX secondPointY
 ```
 
-You can add teleport by setting the matrix:
+You can add teleport by setting the variable:
 
 ```java
-     static int[][][] teleport = {
-        {
-                {9, 0},        
-                {9, 18}        
-        },
-        {
-                {9, 18},       
-                {9, 0}          
-        },
+    private final ArrayList<Point> teleport = new ArrayList<>(Arrays.asList(new Point(0, 9), new Point(18, 9)));
 ```
+
+Also the matrix could be change modifying the associeted matrix in the Maze.java file
+
 ## Screenshots
 
 - The green blocks are those who were visited by the alghoritm
